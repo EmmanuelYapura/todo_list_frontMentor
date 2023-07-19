@@ -143,11 +143,11 @@ function changeTheme( e ){
 
     if(/sun/.test(e.target.src)) {
         let newSrc = e.target.src.replace("sun", "moon").split("images")[1];
-        $iconTheme.src = `/images${newSrc}`;
+        $iconTheme.src = `./images${newSrc}`;
         inputColor.classList.replace('text-dark','text-light');
     }else{
         let newSrc = e.target.src.replace("moon", "sun").split("images")[1];
-        $iconTheme.src = `/images${newSrc}`;
+        $iconTheme.src = `./images${newSrc}`;
         inputColor.classList.replace('text-light', 'text-dark');
     }
     
