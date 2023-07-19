@@ -1,0 +1,195 @@
+body {
+    background-image: url('../images/bg-desktop-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(235, 21%, 11%);
+}
+
+.bg-desktop-light {
+    background-image: url('../images/bg-desktop-light.jpg');
+}
+
+.header {
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8em;
+}
+
+.title-header {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 10px;
+    color: hsl(0, 0%, 98%);
+}
+
+.container-input {
+    margin: 0 auto;
+    display: flex;
+    background-color: hsl(235, 24%, 19%);
+    padding: 1em;
+    max-width: 360px;
+    border-radius: 5px;
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    margin-right: 0.4em;
+    border: 1px solid hsl(236, 9%, 61%);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.circle:hover{
+    cursor: pointer;
+}
+
+.input {
+    width: 300px;
+    padding: 0.3em 0;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+
+.input::placeholder {
+    color: hsl(236, 9%, 61%);
+}
+
+.container-items{
+    padding-bottom: 1.5em;
+}
+
+.container-item {
+    margin: 0.1em auto;
+    display: flex;
+    align-items: center;
+    background-color: hsl(235, 24%, 19%);
+    max-width: 360px;
+    padding: 0.2em 1em;
+    border-radius: 5px;
+}
+
+.text-item {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    width: 300px;
+    color: hsl(233, 11%, 84%);
+}
+
+.cross {
+    width: 14px;
+    height: 14px;
+}
+
+.container-options-task {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 1em;
+    color: hsl(236, 9%, 61%);
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 5px;
+}
+
+.items-left:hover ,.clear-completed:hover, .container-options p:hover{
+    cursor: pointer;
+    color: hsl(0, 0%, 98%);
+}
+
+.container-options {
+    margin: 0 auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: hsl(235, 24%, 19%);
+    padding: 0 1em;
+    border-radius: 5px;
+    max-width: 360px;
+    color: hsl(236, 9%, 61%);
+}
+
+.option-active {
+    color: hsl(220, 98%, 61%);
+}
+
+.drag-text {
+    max-width: 360px;
+    margin: 0 auto;
+    font-size: 15px;
+    padding: 3em 0;
+    color: hsl(236, 9%, 61%);
+    text-align: center;
+}
+
+.cross:hover {
+    cursor: pointer;
+}
+
+.icon-theme:hover {
+    cursor: pointer;
+}
+
+.text-item:hover {
+    cursor: pointer;
+}
+
+.text-dark {
+    color: hsl(233, 11%, 84%);
+}
+
+.body-light {
+    background-color: hsl(236, 33%, 92%);
+}
+
+.bg-light {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.text-light {
+    color: hsl(235, 19%, 35%);
+}
+
+.task-complete {
+    text-decoration: line-through;
+    color: hsl(236, 9%, 61%);
+}
+
+.icon-complete {
+    background: linear-gradient(to bottom, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.displayNone {
+    display: none;
+}
+
+.footer{
+    height: 30px;
+    color: blue;
+    text-align: center;
+}
+
+@media (max-width: 376px) {
+    body {
+        background-image: url('../images/bg-mobile-dark.jpg');
+        background-repeat: no-repeat;
+        background-color: hsl(235, 21%, 11%);
+    }
+
+    .bg-mobile-light {
+        background-image: url('../images/bg-mobile-light.jpg');
+    }
+
+    .header {
+        padding: 1em;
+        padding-bottom: 0.2em;
+    }
+}
