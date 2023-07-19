@@ -48,8 +48,6 @@ function createTask ( text ) {
 
     div.addEventListener('dragstart' , (e) => {
         let selected = document.getElementById(`${e.target.id}`);
-        console.log(selected)
-        console.log(e)
         containerItems.addEventListener('dragover', (e) => {
             e.preventDefault();
         })
